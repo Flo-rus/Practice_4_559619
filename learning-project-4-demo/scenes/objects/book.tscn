@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://btn350dcbvidj"]
+
+[ext_resource type="Script" uid="uid://xincmlllt75t" path="res://scripts/Book.cs" id="1_07o31"]
+[ext_resource type="PackedScene" uid="uid://cimw81845jwic" path="res://resources/book/medieval_open_book_2.glb" id="2_ytm06"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n7mfn"]
+size = Vector3(2.2312012, 0.35455322, 1.3491211)
+
+[sub_resource type="LabelSettings" id="LabelSettings_n7mfn"]
+font_size = 56
+
+[node name="book" type="StaticBody3D" unique_id=1759075807]
+script = ExtResource("1_07o31")
+
+[node name="Sketchfab_Scene" parent="." unique_id=1891438024 instance=ExtResource("2_ytm06")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.014936328, -1.1920929e-07, -0.046542406)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1433933738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026245117, -0.013092041, -0.035888672)
+shape = SubResource("BoxShape3D_n7mfn")
+
+[node name="CanvasLayer" type="Node" parent="." unique_id=1995556028]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=443857939]
+visible = false
+offset_left = 26.0
+offset_top = 73.0
+offset_right = 1132.0
+offset_bottom = 612.0
+size_flags_horizontal = 4
+text = "OHALERO CHI TO FREDDY FAZBER"
+label_settings = SubResource("LabelSettings_n7mfn")
+horizontal_alignment = 1
+vertical_alignment = 1

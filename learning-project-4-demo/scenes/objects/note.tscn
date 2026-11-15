@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dmetrgyqsgqiy"]
+
+[ext_resource type="PackedScene" uid="uid://dwm6ryffsljb8" path="res://resources/note/Note.glb" id="1_4tyip"]
+[ext_resource type="Script" uid="uid://bu3ktyx223ivv" path="res://scripts/Note.cs" id="1_il1cl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n7mfn"]
+size = Vector3(0.9361572, 2.7878723, 1.8214111)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gjmho"]
+font_size = 56
+
+[node name="note" type="StaticBody3D" unique_id=1631511586]
+script = ExtResource("1_il1cl")
+
+[node name="Sketchfab_Scene" parent="." unique_id=815893759 instance=ExtResource("1_4tyip")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=959933283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32647705, 0.021224976, 0.031799316)
+shape = SubResource("BoxShape3D_n7mfn")
+
+[node name="CanvasLayer" type="Node" parent="." unique_id=311386420]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=2108194185]
+visible = false
+offset_left = 439.0
+offset_top = 264.0
+offset_right = 644.0
+offset_bottom = 341.0
+text = "fhjjjjhjfj"
+label_settings = SubResource("LabelSettings_gjmho")

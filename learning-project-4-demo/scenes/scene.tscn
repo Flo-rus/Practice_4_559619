@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cwieblvhhgyc3"]
+
+[ext_resource type="PackedScene" uid="uid://xm3tde032do5" path="res://scenes/player.tscn" id="1_1kc1q"]
+[ext_resource type="PackedScene" uid="uid://dcsq5meq6fplu" path="res://resources/apartment_baked/apartment__baked.glb" id="1_ulcgi"]
+[ext_resource type="PackedScene" uid="uid://bk2ogo5xb7kla" path="res://scenes/Door.tscn" id="3_4msxo"]
+[ext_resource type="PackedScene" uid="uid://btn350dcbvidj" path="res://scenes/objects/book.tscn" id="4_5fb3c"]
+[ext_resource type="PackedScene" uid="uid://dmetrgyqsgqiy" path="res://scenes/objects/note.tscn" id="5_gjmho"]
+[ext_resource type="PackedScene" uid="uid://cy4rugnuhjg3v" path="res://scenes/chair.tscn" id="6_t7and"]
+
+[node name="Node3D" type="Node3D" unique_id=743209400]
+
+[node name="CharacterBody3D" parent="." unique_id=4254125 instance=ExtResource("1_1kc1q")]
+MouseSensitivity = 0.006
+
+[node name="Apartment" type="Node3D" parent="." unique_id=231299832]
+
+[node name="Sketchfab_Scene" parent="Apartment" unique_id=1365537174 instance=ExtResource("1_ulcgi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.708248, -0.073009014, -1.6258364)
+
+[node name="Sketchfab_Scene2" parent="Apartment" unique_id=991430406 instance=ExtResource("1_ulcgi")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 7.1960726, -0.14601803, 8.514925)
+
+[node name="Door" parent="Apartment" unique_id=1234180736 instance=ExtResource("3_4msxo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.467635, -0.1448721, 3.439405)
+
+[node name="Door2" parent="Apartment" unique_id=1925159137 instance=ExtResource("3_4msxo")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.620546, -0.13929346, 5.0956354)
+
+[node name="Door3" parent="Apartment" unique_id=1035501430 instance=ExtResource("3_4msxo")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1.0202302, 0, 1, 0, -4.371139e-08, 5.299616, -0.08362535, 1.8285012)
+
+[node name="StaticBody3D" parent="." unique_id=484023205 instance=ExtResource("4_5fb3c")]
+transform = Transform3D(-0.31929058, 0, 0.021296186, 0, 0.32, 0, -0.021296186, 0, -0.31929058, -0.54215693, 0.62498957, -2.593861)
+Text = "Ohalero chi to freddy fazber"
+
+[node name="StaticBody3D2" parent="." unique_id=1759075807 instance=ExtResource("4_5fb3c")]
+transform = Transform3D(-0.3051894, 0, -0.09622586, 0, 0.32, 0, 0.09622586, 0, -0.3051894, 4.3347516, 0.8951429, -0.034471035)
+Text = "gugugaga"
+
+[node name="StaticBody3D3" parent="." unique_id=1631511586 instance=ExtResource("5_gjmho")]
+transform = Transform3D(-1.3987644e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -1.3987644e-08, 3.228058, 1.8967861, 0.18816233)
+Text = "BLA BLA BLA BLE BLE BLE"
+
+[node name="StaticBody3D4" parent="." unique_id=568761918 instance=ExtResource("5_gjmho")]
+transform = Transform3D(-0.3198723, 0, -0.009039505, 0, 0.32, 0, 0.009039505, 0, -0.3198723, 11.036415, 1.728951, 1.6764357)
+Text = "Gorod pod podoshvoy"
+
+[node name="chair" parent="." unique_id=24479199 instance=ExtResource("6_t7and")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.8815997, 0.42862165, -1.9255798)
